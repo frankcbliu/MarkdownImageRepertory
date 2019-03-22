@@ -100,7 +100,7 @@ fi
 echo "执行git add 命令"
 git add .
 echo "执行git commit 命令"
-git commit -m '$msg'
+git commit -m "$msg"
 echo "执行git push 命令"
 git push origin master
 
@@ -109,3 +109,6 @@ git push origin master
 使用方式：右键打开git.bash，输入 `./push.sh "提交信息"`  回车运行即可。
 
 ![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-20-55-51.png?raw=true)
+
+
+> 注意，脚本中 echo 后双引号会解析其中的变量， 而单引号不会。
