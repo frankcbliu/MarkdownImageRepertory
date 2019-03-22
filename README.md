@@ -82,5 +82,28 @@ git commit -m "提交信息，可以随便打"
 git push orign master
 ```
 
+### git 脚本
 
+> 项目根目录下创建 `push.sh`文件
 
+输入以下代码：
+```
+# git 脚本
+
+if [ $1 != '']
+then
+    msg=$1
+else
+    msg='msg is null';
+fi
+
+echo "执行git add 命令"
+git add .
+echo "执行git commit 命令"
+git commit -m '$msg'
+echo "执行git push 命令"
+git push origin master
+
+```
+
+使用方式：右键打开git.bash，输入 `./push.sh`  回车运行即可。
