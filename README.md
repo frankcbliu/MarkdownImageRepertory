@@ -14,3 +14,73 @@
 1. 安装 VS code，有道云笔记，Git
 2. vs code 上安装插件，修改快捷键，修改配置
 3. 建立GitHub仓库，写脚本，同步图片
+
+----
+#### 安装 vscode
+
+下载地址：https://code.visualstudio.com/
+
+#### 安装 有道云笔记
+
+下载地址：https://note.youdao.com/web/
+
+#### 安装 Git，配置 GitHub
+下载地址：https://git-scm.com/
+配置：https://help.github.com/en
+
+----
+#### VsCode 插件
+Markdown Preview Enhanced
+> 教程：https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/
+
+Paste Image
+
+vscode 编辑器中：打开文件-> 首选项-> 设置
+保持一个主窗口的情况下，找到 paste image 的配置
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-15-06-35.png?raw=true)
+
+> basePath 配置为 `${projectRoot}`
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-15-07-24.png?raw=true)
+
+
+> insert pattern 配置为：
+
+> 注意，此处中间的http链接需要改为你自己的GitHub的地址，怎么拿到自己的地址呢？自己先在GitHub上创建一个仓库，放一个图片，chrome下右键获取它的图片链接
+
+```
+${imageSyntaxPrefix}https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/${imageFilePath}?raw=true${imageSyntaxSuffix}
+```
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-15-09-21.png?raw=true)
+
+> path 配置为 `${projectRoot}/image/`
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-15-13-06.png?raw=true)
+
+
+> 修改 paste 快捷键     首选项-> 键盘快捷方式
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-15-14-41.png?raw=true)
+
+
+### 建立GitHub仓库
+> 由于篇幅所限，此处假定你已经建立好自己的图片仓库
+在工程目录下，右键 `git bash here`
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-15-18-39.png?raw=true)
+
+```
+git clone 仓库地址
+```
+
+> 常用命令
+```
+git add .
+git commit -m "提交信息，可以随便打"
+git push orign master
+```
+
+
+
