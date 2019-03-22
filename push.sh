@@ -1,6 +1,6 @@
 # git 脚本
 
-if [ $1 != '']
+if [ $1 != '' ]
 then
     msg=$1
 else

@@ -90,7 +90,7 @@ git push orign master
 ```
 # git 脚本
 
-if [ $1 != '']
+if [ $1 != '' ]
 then
     msg=$1
 else
@@ -106,4 +106,6 @@ git push origin master
 
 ```
 
-使用方式：右键打开git.bash，输入 `./push.sh`  回车运行即可。
+使用方式：右键打开git.bash，输入 `./push.sh "提交信息"`  回车运行即可。
+
+![](https://github.com/learningNicolas/MarkdownImageRepertory/blob/master/image/2019-03-22-20-55-51.png?raw=true)
