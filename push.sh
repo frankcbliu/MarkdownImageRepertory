@@ -1,10 +1,10 @@
 # git 脚本
 
-if [ $1 != '' ]
+if [ $# -eq 0 ]
 then
-    msg=$1
-else
     msg='msg is null';
+else
+    msg=$1
 fi
 
 echo "执行git add 命令"
