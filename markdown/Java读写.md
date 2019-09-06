@@ -55,3 +55,17 @@ try{
 }catch (Exception e){ }
 
 ```
+
+
+### 写
+```java
+try{
+    String line = "";
+    FileWriter fw = new FileWriter(path);
+    BufferedWriter bw = new BufferedWriter(fw);
+    bw.write(content);
+    bw.close();
+}catch (Exception e){
+    e.printStackTrace();
+}
+```
